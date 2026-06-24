@@ -1,0 +1,11 @@
+[package]
+name = "RustPlayground"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bitflags = "2.13.0" # cargo add bitflags
+modbus = "1.1.3" # cargo add modbus
+serial = "0.4.0" # cargo add serial
+tokio = "1.52.3" # cargo add tokio
+uart = "3.0.2" # cargo add uart
