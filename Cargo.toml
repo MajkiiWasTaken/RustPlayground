@@ -1,6 +1,7 @@
 [package]
 name = "RustPlayground" # name of the project
 version = "0.1.0" # version of the project
+authors = ["Michal Svrcek"] # author of the project
 edition = "2024" # edition of the project
 
 [dependencies]
