@@ -45,3 +45,64 @@ pub fn read_line_as_bool() -> bool{
 
     return input.parse::<bool>().unwrap();
 }
+
+pub fn make_matrix(rows: usize, cols: usize) -> Vec<Vec<f32>> {
+    let mut matrix: Vec<Vec<f32>> = Vec::new();
+    for _ in 0..rows {
+        let mut row: Vec<f32> = Vec::new();
+        for _ in 0..cols {
+            row.push(0.0);
+        }
+        matrix.push(row);
+    }
+    return matrix;
+}
+
+pub fn print_matrix(matrix: &Vec<Vec<f32>>) {
+    for row in matrix {
+        for val in row {
+            print!("{:.2} ", val);
+        }
+        println!();
+    }
+}
+
+pub fn print_matrix_with_indices(matrix: &Vec<Vec<f32>>) {
+    let rows = matrix.len();
+    let cols = if rows > 0 { matrix[0].len() } else { 0 };
+
+    // Print column indices
+    print!("     ");
+    for col in 0..cols {
+        print!("{:>6} ", col);
+    }
+    println!();
+
+    // Print separator line
+    print!("     ");
+    for _ in 0..cols {
+        print!("------");
+    }
+    println!();
+
+    // Print each row with its index
+    for (i, row) in matrix.iter().enumerate() {
+        print!("{:>3} |", i); // Print row index
+        for val in row {
+            print!("{:>6.2} ", val);
+        }
+        println!();
+    }
+}
+
+pub fn log_info(message: &str) {
+    println!("[INFO]: {}", message);
+}
+
+pub fn log_warning(message: &str) {
+    println!("[WARNING]: {}", message);
+}
+
+pub fn log_error(message: &str) {
+    eprintln!("[ERROR]: {}", message);
+}
