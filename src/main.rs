@@ -1,6 +1,6 @@
 // when user builds a new cargo via cargo new <project_name>, this is the default main.rs file
 mod calc; // linkage to the calc.rs file in the same directory
-
+mod utilities;
 
 fn main() {
     // let mut m: i32 = 5;  // if user wants to change the value of a var mut is needed as a declaration param
@@ -16,4 +16,11 @@ fn main() {
     println!("{}", calc::power(5, 3));
     println!("{}", calc::fact(5));
 
+    print!("Please enter something: ");
+    let user_input = utilities::read_line();
+    println!("You entered: {}", user_input);
+    
+    print!("Please enter an integer: ");
+    let user_input_int = utilities::read_line_as_i32();
+    println!("You entered the integer: {}", user_input_int);
 }

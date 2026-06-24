@@ -8,5 +8,6 @@ edition = "2024" # edition of the project
 bitflags = "2.13.0" # cargo add bitflags
 modbus = "1.1.3" # cargo add modbus
 serial = "0.4.0" # cargo add serial
+text_io = "0.1.13" # cargo add text_io
 tokio = "1.52.3" # cargo add tokio
 uart = "3.0.2" # cargo add uart

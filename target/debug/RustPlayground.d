@@ -1,1 +1,1 @@
-C:\Users\SvrcekM\Documents\Project\RustPlayground\target\debug\RustPlayground.exe: C:\Users\SvrcekM\Documents\Project\RustPlayground\src\main.rs
+C:\Users\SvrcekM\Documents\Project\RustPlayground\target\debug\RustPlayground.exe: C:\Users\SvrcekM\Documents\Project\RustPlayground\src\calc.rs C:\Users\SvrcekM\Documents\Project\RustPlayground\src\main.rs C:\Users\SvrcekM\Documents\Project\RustPlayground\src\utilities.rs
